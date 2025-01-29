@@ -1,4 +1,16 @@
 import NavBar from "./components/NavBar";
+import ServiceCard from "./components/ServiceCard";
+import SkillCard from "./components/SkillCard";
+import { faServer, faCloud, faDatabase, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+
+const services = [
+  {title:"Web Development", description:"Creating responsive and dynamic websites tailored to your business needs.", faIcon:faLaptopCode},
+  {title:"Backend Development", description:"Building robust server-side applications and APIs for seamless integration.", faIcon:faServer}, 
+  {title:"Database Design", description:"Designing efficient database schemas for optimal data management.", faIcon:faDatabase}, 
+  {title:"Cloud Integration", description:"Integrating cloud services to enhance scalability and performance.", faIcon:faCloud}, 
+];
+const technicalSkills = ["HTML5", "CSS3", "Javascript", "Python", "Java", "SQL", "Git", "Linux"];
+const softSkills = ["Team Collaboration", "Critical Thinking", "Problem Solving", "Adaptability"];
 
 function App() {
   return (
@@ -21,38 +33,25 @@ function App() {
           >
             Skills
           </h2>
-          <div className="flex ">
-            <div className="flex flex-col gap-2">
-              <h3 className="text-xl font-bold text-gray-700">Techincal skills</h3>
-              <div className="flex gap-4 flex-1 flex-wrap">
-                <span className="bg-cyan-100 px-4 py-2 font-semibold w-fit rounded-full">HTML5</span>
-                <span className="bg-cyan-100 px-4 py-2 font-semibold w-fit rounded-full">CSS3</span>
-                <span className="bg-cyan-100 px-4 py-2 font-semibold w-fit rounded-full">JavaScript</span>
-                <span className="bg-cyan-100 px-4 py-2 font-semibold w-fit rounded-full">Python</span>
-                <span className="bg-cyan-100 px-4 py-2 font-semibold w-fit rounded-full">Java</span>
-                <span className="bg-cyan-100 px-4 py-2 font-semibold w-fit rounded-full">SQL</span>
-                <span className="bg-cyan-100 px-4 py-2 font-semibold w-fit rounded-full">Git</span>
-                <span className="bg-cyan-100 px-4 py-2 font-semibold w-fit rounded-full">Linux</span>
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <h3 className="text-xl font-bold text-gray-700">Soft Skills</h3>
-              <div className="flex gap-4 flex-1 flex-wrap">
-                <span className="bg-cyan-100 px-4 py-2 font-semibold w-fit rounded-full">Team collaboration</span>
-                <span className="bg-cyan-100 px-4 py-2 font-semibold w-fit rounded-full">Critical Thinking</span>
-                <span className="bg-cyan-100 px-4 py-2 font-semibold w-fit rounded-full">Problem Solving</span>
-                <span className="bg-cyan-100 px-4 py-2 font-semibold w-fit rounded-full">Adaptability</span>
-              </div>
-            </div>
+          <div className="flex">
+            <SkillCard title="Technical Skills" skillArray={technicalSkills} />
+            <SkillCard title="Soft Skills" skillArray={softSkills} />
           </div>
         </section>
-        {/* skills section */}
-        <section>
+        {/* services section */}
+        <section className="flex flex-col gap-10">
           <h2 
             className="relative text-center text-4xl font-bold text-gray-700 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full"
           >
             Services
           </h2>
+          <div className="flex justify-center gap-8">
+            {
+              services.map((service) => {
+                return <ServiceCard title={service.title} description={service.description} faIcon={service.faIcon} />
+              })
+            }
+          </div>
         </section>
       </main>
     </div>

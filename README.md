@@ -1,10 +1,10 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# About project
+This is my personal website that showcases my skills, services, project that I have worked on, etc.
 
 ## Tech stack
 - React
 - Tailwindcss
+- Fontawesome icons
 
 ## Available Scripts
 

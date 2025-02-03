@@ -51,6 +51,15 @@ const experiences = [
   }
 ];
 
+const schools = [
+  {
+    certificate: "Bachelor's",
+    name: "Wallacedene Secondary",
+    period:"Jan 2012 - Dec 2016",
+    description: "Focused on Math and Science related subjects."
+  },
+];
+
 function App() {
   return (
     <div className="bg-gray-50 flex flex-col items-center gap-36 font-nunito pb-8">
@@ -128,6 +137,31 @@ function App() {
                       <span>{ experience.company }</span>
                     </div>
                     <p className="text-gray-500">{ experience.description }</p>
+                  </div>
+                );
+              })
+            }
+          </div>
+        </section>
+        {/* Education section */}
+        <section className="flex flex-col gap-12">
+          <h2 
+            className="self-center w-fit text-4xl font-bold text-gray-700 pb-6 mb-6 relative before:content-[''] before:absolute before:bg-primary before:transform before:right-1/2 before:translate-x-1/2 before:bottom-0 before:w-16 before:h-1"
+          >
+            Education
+          </h2>
+          <div className="flex flex-col gap-8">
+            {
+              schools.map((school) => {
+                return (
+                  <div className="flex flex-col gap-2">
+                    <h2 className="text-2xl font-bold text-gray-700">{ school.certificate }</h2>
+                    <div className="text-gray-500 flex gap-2 text-sm">
+                      <span>{ school.period }</span>
+                      <span className="border border-gray-400"></span>
+                      <span>{ school.name }</span>
+                    </div>
+                    <p className="text-gray-500 mt-2">{ school.description }</p>
                   </div>
                 );
               })

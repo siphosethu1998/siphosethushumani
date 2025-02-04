@@ -2,6 +2,8 @@ import NavBar from "./components/NavBar";
 import ProjectCard from "./components/ProjectCard";
 import ServiceCard from "./components/ServiceCard";
 import SkillCard from "./components/SkillCard";
+import Footer from "./components/Footer";
+import SectionHeading from "./components/SectionHeading";
 import { faServer, faCloud, faDatabase, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 
 const technicalSkills = ["HTML5", "CSS3", "Javascript", "Python", "Java", "SQL", "Git", "Linux"];
@@ -15,14 +17,14 @@ const services = [
 const projects = [
   {
     image: "the_odin_project_clone.jpg", 
-    title:"The odin project clone", 
+    title:"The Odin Project clone", 
     description:"Building robust server-side applications and APIs for seamless integration.",
     viewProject: "https://github.com/siphosethu1998/the_odin_project_clone",
     liveDemo: "https://online-tech-store.onrender.com/products"
   }, 
   {
     image: "online-store.jpg", 
-    title:"Online e-commerce store", 
+    title:"Online E-commerce store", 
     description:"This is a fictional gadget store selling tech items to customers",
     viewProject: "https://github.com/siphosethu1998/online-store",
     liveDemo: "https://online-tech-store.onrender.com/products"
@@ -62,13 +64,13 @@ const schools = [
 
 function App() {
   return (
-    <div className="bg-gray-50 flex flex-col items-center gap-36 font-nunito pb-8">
+    <div className="bg-gray-50 flex flex-col items-center gap-36 font-nunito">
       <NavBar />
       <main className="flex flex-col gap-36 px-80 mt-56">
         {/* hero section */}
         <section className="flex gap-20 items-center">
           <div className="flex flex-col gap-6">
-            <h1 className="text-4xl font-bold text-primary"><span className="text-gray-700">Hi, I'm</span> Siphosethu Shumani</h1>
+            <h1 className="text-4xl font-bold text-primary"><span className="text-desaturated-blue">Hi, I'm</span> Siphosethu Shumani</h1>
             <p className="w-4/5 text-gray-500">A passionate Full-Stack Developer committed to building efficient and scalable web applications.</p>
             <a href="#contact" className="font-semibold bg-primary hover:bg-secondary transiton-colors text-white w-fit py-3 px-6 rounded-full">Get in touch</a>
           </div>
@@ -76,11 +78,7 @@ function App() {
         </section>
         {/* skills section */}
         <section className="flex flex-col gap-12">
-          <h2 
-            className="self-center w-fit text-4xl font-bold text-gray-700 pb-6 mb-6 relative before:content-[''] before:absolute before:bg-primary before:transform before:right-1/2 before:translate-x-1/2 before:bottom-0 before:w-16 before:h-1"
-          >
-            Skills
-          </h2>
+          <SectionHeading heading="Skills" />
           <div className="flex">
             <SkillCard title="Technical Skills" skillArray={technicalSkills} />
             <SkillCard title="Soft Skills" skillArray={softSkills} />
@@ -88,11 +86,7 @@ function App() {
         </section>
         {/* services section */}
         <section className="flex flex-col gap-12">
-          <h2 
-            className="self-center w-fit text-4xl font-bold text-gray-700 pb-6 mb-6 relative before:content-[''] before:absolute before:bg-primary before:transform before:right-1/2 before:translate-x-1/2 before:bottom-0 before:w-16 before:h-1"
-          >
-            Services
-          </h2>
+          <SectionHeading heading="Services" />
           <div className="flex justify-center gap-8">
             {
               services.map((service) => {
@@ -103,11 +97,7 @@ function App() {
         </section>
         {/* projects section */}
         <section className="flex flex-col gap-12">
-          <h2 
-            className="self-center w-fit text-4xl font-bold text-gray-700 pb-6 mb-6 relative before:content-[''] before:absolute before:bg-primary before:transform before:right-1/2 before:translate-x-1/2 before:bottom-0 before:w-16 before:h-1"
-          >
-            Projects
-          </h2>
+          <SectionHeading heading="Projects" />
           <div className="flex justify-center gap-8">
             {
               projects.map((project) => {
@@ -120,17 +110,13 @@ function App() {
         </section>
         {/* Experience section */}
         <section className="flex flex-col gap-12">
-          <h2 
-            className="self-center w-fit text-4xl font-bold text-gray-700 pb-6 mb-6 relative before:content-[''] before:absolute before:bg-primary before:transform before:right-1/2 before:translate-x-1/2 before:bottom-0 before:w-16 before:h-1"
-          >
-            Experience
-          </h2>
+          <SectionHeading heading="Experience" />
           <div className="flex flex-col gap-8 pl-8 relative before:content-[''] before:absolute before:bg-primary before:left-2.5 before:w-1 before:h-full">
             {
               experiences.map((experience) => {
                 return (
                   <div className="flex flex-col gap-2">
-                    <h2 className="text-2xl font-bold text-gray-700 before:content-[''] before:absolute before:bg-white before:w-4 before:h-4 before:left-0 before:rounded-full before:border-4 before:p-2 before:border-primary">{ experience.position }</h2>
+                    <h2 className="text-2xl font-bold text-desaturated-blue before:content-[''] before:absolute before:bg-white before:w-4 before:h-4 before:left-0 before:rounded-full before:border-4 before:p-2 before:border-primary">{ experience.position }</h2>
                     <div className="text-gray-500 flex gap-2 text-sm">
                       <span>{ experience.period }</span>
                       <span className="border border-gray-400"></span>
@@ -145,17 +131,13 @@ function App() {
         </section>
         {/* Education section */}
         <section className="flex flex-col gap-12">
-          <h2 
-            className="self-center w-fit text-4xl font-bold text-gray-700 pb-6 mb-6 relative before:content-[''] before:absolute before:bg-primary before:transform before:right-1/2 before:translate-x-1/2 before:bottom-0 before:w-16 before:h-1"
-          >
-            Education
-          </h2>
+          <SectionHeading heading="Education" />
           <div className="flex flex-col gap-8">
             {
               schools.map((school) => {
                 return (
                   <div className="flex flex-col gap-2">
-                    <h2 className="text-2xl font-bold text-gray-700">{ school.certificate }</h2>
+                    <h2 className="text-2xl font-bold text-desaturated-blue">{ school.certificate }</h2>
                     <div className="text-gray-500 flex gap-2 text-sm">
                       <span>{ school.period }</span>
                       <span className="border border-gray-400"></span>
@@ -169,6 +151,7 @@ function App() {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }

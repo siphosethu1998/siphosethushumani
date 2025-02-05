@@ -4,7 +4,7 @@ import { faLinkedin, faGithub, faHackerrank } from '@fortawesome/free-brands-svg
 
 const Footer = () => {
   return(
-    <div className="bg-desaturated-blue text-white w-full p-12 flex flex-col items-center gap-8">
+    <div id="contact" className="bg-desaturated-blue text-white w-full p-12 flex flex-col items-center gap-8">
       <h1 className="text-2xl font-bold">Contact</h1>
       <p>If you're interested in working together or have any questions, feel free to reach out!</p>
       <div className="flex flex-col gap-8 items-center">
@@ -22,7 +22,7 @@ const Footer = () => {
             rel="noreferrer"
             target="_blank" 
             >
-            <FontAwesomeIcon icon={faLinkedin} className='size-10 hover:text-primary' /> Linkedin
+            <FontAwesomeIcon icon={faLinkedin} className='size-10 transition-colors hover:text-primary' /> Linkedin
           </a>
           <a 
             href="https://github.com/siphosethu1998" 
@@ -30,7 +30,7 @@ const Footer = () => {
             target="_blank" 
             rel="noreferrer"
             >
-            <FontAwesomeIcon icon={faGithub} className='size-10 hover:text-black' /> GitHub
+            <FontAwesomeIcon icon={faGithub} className='size-10 transition-colors hover:text-black' /> GitHub
           </a>
           <a 
             href="https://www.hackerrank.com/profile/siphosethu1998" 
@@ -38,7 +38,7 @@ const Footer = () => {
             target="_blank" 
             rel="noreferrer"
             >
-            <FontAwesomeIcon icon={faHackerrank} className='size-10 hover:text-green-400' /> HackerRank
+            <FontAwesomeIcon icon={faHackerrank} className='size-10 transition-colors hover:text-green-400' /> HackerRank
           </a>
         </div>
       </div>

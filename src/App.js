@@ -5,8 +5,9 @@ import SkillCard from "./components/SkillCard";
 import Footer from "./components/Footer";
 import SectionHeading from "./components/SectionHeading";
 import { faServer, faCloud, faDatabase, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import Button from "./components/Button";
 
-const technicalSkills = ["HTML5", "CSS3", "Javascript", "Python", "Java", "SQL", "Git", "Linux"];
+const technicalSkills = ["HTML5", "CSS3", "Javascript", "Python", "Java", "SQL", "GitHub", "Linux"];
 const softSkills = ["Team Collaboration", "Critical Thinking", "Problem Solving", "Adaptability"];
 const services = [
   {title:"Web Development", description:"Creating responsive and dynamic websites tailored to your business needs.", faIcon:faLaptopCode},
@@ -72,7 +73,10 @@ function App() {
           <div className="flex flex-col gap-6">
             <h1 className="text-4xl font-bold text-primary"><span className="text-desaturated-blue">Hi, I'm</span> Siphosethu Shumani</h1>
             <p className="w-4/5 text-gray-500">A passionate Full-Stack Developer committed to building efficient and scalable web applications.</p>
-            <a href="#contact" className="font-semibold bg-primary hover:bg-secondary transiton-colors text-white w-fit py-3 px-6 rounded-full">Get in touch</a>
+            <div className="flex gap-4">
+              <Button href="#contact" buttonText="Get in touch" addedStyles="bg-primary hover:bg-secondary text-white py-3" />
+              <Button href="#download" buttonText="Download CV" addedStyles="border border-primary hover:bg-blue-50 text-primary py-3" />
+            </div>
           </div>
           <img src="/my_image.jpg" alt="profile-pic" className="size-72 rounded-full shadow-md" />
         </section>
@@ -111,7 +115,7 @@ function App() {
         {/* Experience section */}
         <section className="flex flex-col gap-12">
           <SectionHeading heading="Experience" />
-          <div className="flex flex-col gap-8 pl-8 relative before:content-[''] before:absolute before:bg-primary before:left-2.5 before:w-1 before:h-full">
+          <div className="flex flex-col gap-8 pl-10 relative before:content-[''] before:absolute before:bg-primary before:left-2.5 before:w-1 before:h-full">
             {
               experiences.map((experience) => {
                 return (
@@ -132,12 +136,14 @@ function App() {
         {/* Education section */}
         <section className="flex flex-col gap-12">
           <SectionHeading heading="Education" />
-          <div className="flex flex-col gap-8">
+          {/*<div className="flex flex-col gap-8">*/}
+          <div className="flex flex-col gap-8 pl-10 relative before:content-[''] before:absolute before:bg-primary before:left-2.5 before:w-1 before:h-full">
             {
               schools.map((school) => {
                 return (
                   <div className="flex flex-col gap-2">
-                    <h2 className="text-2xl font-bold text-desaturated-blue">{ school.certificate }</h2>
+                    {/*<h2 className="text-2xl font-bold text-desaturated-blue">{ school.certificate }</h2>*/}
+                    <h2 className="text-2xl font-bold text-desaturated-blue before:content-[''] before:absolute before:bg-white before:w-4 before:h-4 before:left-0 before:rounded-full before:border-4 before:p-2 before:border-primary">{ school.certificate }</h2>
                     <div className="text-gray-500 flex gap-2 text-sm">
                       <span>{ school.period }</span>
                       <span className="border border-gray-400"></span>

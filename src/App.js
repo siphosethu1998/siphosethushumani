@@ -65,11 +65,11 @@ const schools = [
 
 function App() {
   return (
-    <div className="bg-gray-50 flex flex-col items-center pt-52 gap-36 font-nunito">
+    <div className="bg-gray-50 flex flex-col items-center gap-36 font-nunito">
       <NavBar />
       <main className="flex flex-col gap-32 px-80">
         {/* hero section */}
-        <section id="header" className="flex gap-20 items-center pt-20">
+        <section id="header" className="flex gap-20 items-center pt-48">
           <div className="flex flex-col gap-6 ">
             <h1 className="text-4xl font-bold text-primary"><span className="text-desaturated-blue">Hi, I'm</span> Siphosethu Shumani</h1>
             <p className="w-4/5 text-gray-500">A passionate Full-Stack Developer committed to building efficient and scalable web applications.</p>

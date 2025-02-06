@@ -1,12 +1,14 @@
 # About project
 This is my personal website that showcases my skills, services, project that I have worked on, etc.
 
+**Link to Live demo** : https://siphosethushumani.onrender.com/
+
 ## Tech stack
 - React
 - Tailwindcss
 - Fontawesome icons
 
-## Available Scripts
+## Available Scripts to run project locally
 
 In the project directory, to install the dependencies you can run:
 

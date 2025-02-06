@@ -34,7 +34,7 @@ const projects = [
     image: "personal_website.jpg", 
     title:"Personal Website", 
     description:"This is my personal website where I showcase my skills, services, projects that I have worked on and so on...",
-    viewProject: "https://github.com/siphosethu1998/online-store",
+    viewProject: "https://github.com/siphosethu1998/siphosethushumani",
     liveDemo: "https://siphosethushumani.onrender.com"
   }, 
 ];

@@ -10,13 +10,17 @@ This is my personal website that showcases my skills, services, project that I h
 
 ## Available Scripts to run project locally
 
-In the project directory, to install the dependencies you can run:
+1. Clone the repo in your command line interface into your local machine with the following command:
 
-### `npm install`
+   ### `git clone https://github.com/siphosethu1998/siphosethushumani`
 
-In the project directory, to start the project you can run:
+2. In the project directory, to install the dependencies you can run:
 
-### `npm start`
+   ### `npm install`
 
-Runs the app in the development mode.\
+3. In the project directory, to start the project you can run:
+
+   ### `npm start`
+
+App runs in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.

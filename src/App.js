@@ -31,11 +31,11 @@ const projects = [
     liveDemo: "https://online-tech-store.onrender.com/products"
   },
   {
-    image: "some-img", 
-    title:"Database Design", 
-    description:"Designing efficient database schemas for optimal data management.",
+    image: "personal_website.jpg", 
+    title:"Personal Website", 
+    description:"This is my personal website where I showcase my skills, services, projects that I have worked on and so on...",
     viewProject: "https://github.com/siphosethu1998/online-store",
-    liveDemo: "https://online-tech-store.onrender.com/products"
+    liveDemo: "https://siphosethushumani.onrender.com"
   }, 
 ];
 
@@ -91,7 +91,7 @@ function App() {
         {/* services section */}
         <section id="services" className="flex flex-col gap-12">
           <SectionHeading heading="Services" />
-          <div className="flex justify-center gap-8">
+          <div className="flex justify-center gap-8 flex-wrap">
             {
               services.map((service) => {
                 return <ServiceCard title={service.title} description={service.description} faIcon={service.faIcon} />

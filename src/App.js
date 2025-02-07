@@ -4,6 +4,8 @@ import SkillCard from "./components/SkillCard";
 import Footer from "./components/Footer";
 import SectionHeading from "./components/SectionHeading";
 import { FaServer, FaCloud, FaDatabase, FaLaptopCode } from 'react-icons/fa';
+import { FaArrowRightLong } from 'react-icons/fa6';
+import { HiDownload } from 'react-icons/hi';
 import Button from "./components/Button";
 
 /* array with information for all the section on the page */
@@ -17,11 +19,11 @@ const services = [
 ];
 const projects = [
   {
-    image: "the_odin_project_clone.jpg", 
-    title:"The Odin Project clone", 
-    description:"Building robust server-side applications and APIs for seamless integration.",
-    viewProject: "https://github.com/siphosethu1998/the_odin_project_clone",
-    liveDemo: "https://online-tech-store.onrender.com/products"
+    image: "personal_website.jpg", 
+    title:"Personal Website", 
+    description:"This is my personal website where I showcase my skills, services, projects that I have worked on and so on...",
+    viewProject: "https://github.com/siphosethu1998/siphosethushumani",
+    liveDemo: "https://siphosethushumani.onrender.com"
   }, 
   {
     image: "online-store.jpg", 
@@ -31,11 +33,11 @@ const projects = [
     liveDemo: "https://online-tech-store.onrender.com/products"
   },
   {
-    image: "personal_website.jpg", 
-    title:"Personal Website", 
-    description:"This is my personal website where I showcase my skills, services, projects that I have worked on and so on...",
-    viewProject: "https://github.com/siphosethu1998/siphosethushumani",
-    liveDemo: "https://siphosethushumani.onrender.com"
+    image: "the_odin_project_clone.jpg", 
+    title:"The Odin Project clone", 
+    description:"Building robust server-side applications and APIs for seamless integration.",
+    viewProject: "https://github.com/siphosethu1998/the_odin_project_clone",
+    liveDemo: "https://online-tech-store.onrender.com/products"
   }, 
 ];
 
@@ -71,7 +73,7 @@ const schools = [
     certificate: "Fullstack Web Development",
     name: "HyperionDev",
     period:"Nov 2024 - Present",
-    description: "Focused full stack web develop topics and technologies."
+    description: "Focused full stack web development topics and technologies."
   },
 ];
 
@@ -86,8 +88,12 @@ function App() {
             <h1 className="text-4xl font-bold text-primary"><span className="text-desaturated-blue">Hi, I'm</span> Siphosethu Shumani</h1>
             <p className="w-4/5 text-gray-500">A passionate Full-Stack Developer committed to building efficient and scalable web applications.</p>
             <div className="flex gap-4">
-              <Button href="#contact" buttonText="Get in touch" addedStyles="bg-primary hover:bg-secondary text-white py-3" />
-              <Button href="CV_DYL_1.docx" buttonText="Download CV" addedStyles="border border-primary hover:bg-blue-50 text-primary py-3" />
+              <Button href="#contact" addedStyles="bg-primary hover:bg-secondary text-white" >
+                  Get in touch  <FaArrowRightLong />
+              </Button>
+              <Button href="CV_DYL_1.docx" addedStyles="border border-primary hover:bg-blue-50 text-primary" >
+                  Download CV  <HiDownload className="size-5" />
+              </Button>
             </div>
           </div>
           <img src="/my_image.jpg" alt="profile-pic" className="size-72 rounded-full shadow-md" />

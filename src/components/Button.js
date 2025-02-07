@@ -1,10 +1,10 @@
-const Button = ({href, buttonText, addedStyles}) => {
+const Button = ({href, addedStyles, children}) => {
   return (
     <a 
       href={href}
-      className={`font-semibold transiton-colors w-fit px-5 rounded-full ${addedStyles}`}
+      className={`flex items-center gap-2 font-semibold transiton-colors w-fit px-5 rounded-full py-2 ${addedStyles}`}
       >
-        { buttonText }
+        { children }
     </a>
   );
 }

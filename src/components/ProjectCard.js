@@ -14,7 +14,7 @@ const ProjectCard = ({image, title, description, viewProject, liveDemo }) => {
         <Button href={viewProject} addedStyles="bg-primary hover:bg-secondary text-white">
             <FaGithub className="size-5"/> View Project 
         </Button>
-        <Button href={liveDemo} addedStyles="border border-primary hover:bg-blue-50 text-primary">
+        <Button href={liveDemo} addedStyles="border border-desaturated-blue hover:bg-blue-50 text-desaturated-blue">
             Live Demo <HiMiniArrowUpRight className="size-5"/>  
         </Button>
       </div>

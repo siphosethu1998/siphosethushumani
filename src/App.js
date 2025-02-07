@@ -28,7 +28,7 @@ const projects = [
   {
     image: "online-store.jpg", 
     title:"Online E-commerce store", 
-    description:"This is a fictional gadget store selling tech items to customers",
+    description:"This is a fictional gadget store selling tech items to customers.",
     viewProject: "https://github.com/siphosethu1998/online-store",
     liveDemo: "https://online-tech-store.onrender.com/products"
   },
@@ -91,7 +91,7 @@ function App() {
               <Button href="#contact" addedStyles="bg-primary hover:bg-secondary text-white" >
                   Get in touch  <FaArrowRightLong />
               </Button>
-              <Button href="CV_DYL_1.docx" addedStyles="border border-primary hover:bg-blue-50 text-primary" >
+              <Button href="CV_DYL_1.docx" addedStyles="border border-desaturated-blue hover:bg-blue-50 text-desaturated-blue" >
                   Download CV  <HiDownload className="size-5" />
               </Button>
             </div>

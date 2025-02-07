@@ -1,12 +1,12 @@
 import NavBar from "./components/NavBar";
 import ProjectCard from "./components/ProjectCard";
-import ServiceCard from "./components/ServiceCard";
 import SkillCard from "./components/SkillCard";
 import Footer from "./components/Footer";
 import SectionHeading from "./components/SectionHeading";
 import { FaServer, FaCloud, FaDatabase, FaLaptopCode } from 'react-icons/fa';
 import Button from "./components/Button";
 
+/* array with information for all the section on the page */
 const technicalSkills = ["HTML5", "CSS3", "Javascript", "Python", "Java", "SQL", "GitHub", "Linux"];
 const softSkills = ["Team Collaboration", "Critical Thinking", "Problem Solving", "Adaptability"];
 const services = [
@@ -50,7 +50,7 @@ const experiences = [
     position:"Tutor",
     period:"Mar 2022 - Present",
     company: "Turtlejar Tutoring",
-    description: "Tutoring Math and Science in-person and online, helping students achieve academic success."
+    description: "Tutoring Math, Science and Computer Science in-person and online, helping students achieve academic success."
   }
 ];
 
@@ -60,6 +60,18 @@ const schools = [
     name: "Wallacedene Secondary",
     period:"Jan 2012 - Dec 2016",
     description: "Focused on Math and Science related subjects."
+  },
+  {
+    certificate: "Bsc - Computer Science",
+    name: "University of Cape Town",
+    period:"Jan 2017 - Dec 2022",
+    description: "Focused on Math and Computer Science courses."
+  },
+  {
+    certificate: "Fullstack Web Development",
+    name: "HyperionDev",
+    period:"Nov 2024 - Present",
+    description: "Focused full stack web develop topics and technologies."
   },
 ];
 

@@ -6,7 +6,7 @@ This is my personal website that showcases my skills, services, project that I h
 ## Tech stack
 - React
 - Tailwindcss
-- Fontawesome icons
+- react-icons
 
 ## Available Scripts to run project locally
 

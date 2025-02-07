@@ -4,16 +4,16 @@ import ServiceCard from "./components/ServiceCard";
 import SkillCard from "./components/SkillCard";
 import Footer from "./components/Footer";
 import SectionHeading from "./components/SectionHeading";
-import { faServer, faCloud, faDatabase, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import { FaServer, FaCloud, FaDatabase, FaLaptopCode } from 'react-icons/fa';
 import Button from "./components/Button";
 
 const technicalSkills = ["HTML5", "CSS3", "Javascript", "Python", "Java", "SQL", "GitHub", "Linux"];
 const softSkills = ["Team Collaboration", "Critical Thinking", "Problem Solving", "Adaptability"];
 const services = [
-  {title:"Web Development", description:"Creating responsive and dynamic websites tailored to your business needs.", faIcon:faLaptopCode},
-  {title:"Backend Development", description:"Building robust server-side applications and APIs for seamless integration.", faIcon:faServer}, 
-  {title:"Database Design", description:"Designing efficient database schemas for optimal data management.", faIcon:faDatabase}, 
-  {title:"Cloud Integration", description:"Integrating cloud services to enhance scalability and performance.", faIcon:faCloud}, 
+  {title:"Web Development", description:"Creating responsive and dynamic websites tailored to your business needs.", faIcon:FaLaptopCode},
+  {title:"Backend Development", description:"Building robust server-side applications and APIs for seamless integration.", faIcon:FaServer}, 
+  {title:"Database Design", description:"Designing efficient database schemas for optimal data management.", faIcon:FaDatabase}, 
+  {title:"Cloud Integration", description:"Integrating cloud services to enhance scalability and performance.", faIcon:FaCloud}, 
 ];
 const projects = [
   {
@@ -75,7 +75,7 @@ function App() {
             <p className="w-4/5 text-gray-500">A passionate Full-Stack Developer committed to building efficient and scalable web applications.</p>
             <div className="flex gap-4">
               <Button href="#contact" buttonText="Get in touch" addedStyles="bg-primary hover:bg-secondary text-white py-3" />
-              <Button href="#download" buttonText="Download CV" addedStyles="border border-primary hover:bg-blue-50 text-primary py-3" />
+              <Button href="CV_DYL_1.docx" buttonText="Download CV" addedStyles="border border-primary hover:bg-blue-50 text-primary py-3" />
             </div>
           </div>
           <img src="/my_image.jpg" alt="profile-pic" className="size-72 rounded-full shadow-md" />
@@ -94,7 +94,14 @@ function App() {
           <div className="flex justify-center gap-8 flex-wrap">
             {
               services.map((service) => {
-                return <ServiceCard title={service.title} description={service.description} faIcon={service.faIcon} />
+                // service card
+                return (
+                  <div className="flex flex-col gap-4 text-center items-center bg-white w-64 p-6 rounded-lg shadow-lg hover:-translate-y-2.5 hover:duration-300 ease-in-out duration-300" >
+                    <service.faIcon className='w-14 h-12 text-primary' />
+                    <h3 className="text-gray-700 text-2xl font-bold">{ service.title }</h3>
+                    <p className="text-gray-500">{ service.description }</p>
+                  </div>
+                )
               })
             }
           </div>

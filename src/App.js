@@ -37,7 +37,7 @@ const projects = [
     title:"Online E-commerce store", 
     description:"This is a fictional gadget store selling tech items to customers.",
     viewProject: "https://github.com/siphosethu1998/online-store",
-    liveDemo: "https://online-tech-store.onrender.com/products"
+    liveDemo: "https://online-tech-store.onrender.com/"
   },
 ];
 

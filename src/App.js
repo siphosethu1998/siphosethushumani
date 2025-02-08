@@ -26,19 +26,19 @@ const projects = [
     liveDemo: "https://siphosethushumani.onrender.com"
   }, 
   {
+    image: "the_odin_project_clone.jpg", 
+    title:"The Odin Project clone", 
+    description:"This is a clone of theodinproject landing page.",
+    viewProject: "https://github.com/siphosethu1998/the_odin_project_clone",
+    liveDemo: "https://the-odin-project-clone.onrender.com"
+  }, 
+  {
     image: "online-store.jpg", 
     title:"Online E-commerce store", 
     description:"This is a fictional gadget store selling tech items to customers.",
     viewProject: "https://github.com/siphosethu1998/online-store",
     liveDemo: "https://online-tech-store.onrender.com/products"
   },
-  {
-    image: "the_odin_project_clone.jpg", 
-    title:"The Odin Project clone", 
-    description:"Building robust server-side applications and APIs for seamless integration.",
-    viewProject: "https://github.com/siphosethu1998/the_odin_project_clone",
-    liveDemo: "https://online-tech-store.onrender.com/products"
-  }, 
 ];
 
 const experiences = [

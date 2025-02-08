@@ -11,10 +11,10 @@ const ProjectCard = ({image, title, description, viewProject, liveDemo }) => {
         <p className="text-gray-500">{ description }</p>
       </div>
       <div className="flex justify-between px-8 pb-8 mt-auto">
-        <Button href={viewProject} addedStyles="bg-primary hover:bg-secondary text-white">
+        <Button href={viewProject} target="_blank" addedStyles="bg-primary hover:bg-secondary text-white">
             <FaGithub className="size-5"/> View Project 
         </Button>
-        <Button href={liveDemo} addedStyles="border border-desaturated-blue hover:bg-blue-50 text-desaturated-blue">
+        <Button href={liveDemo} target="_blank" addedStyles="border border-desaturated-blue hover:bg-blue-50 text-desaturated-blue">
             Live Demo <HiMiniArrowUpRight className="size-5"/>  
         </Button>
       </div>

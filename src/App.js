@@ -4,8 +4,8 @@ import SkillCard from "./components/SkillCard";
 import Footer from "./components/Footer";
 import SectionHeading from "./components/SectionHeading";
 import { FaServer, FaCloud, FaDatabase, FaLaptopCode } from 'react-icons/fa';
-import { FaArrowRightLong } from 'react-icons/fa6';
 import { HiDownload } from 'react-icons/hi';
+import { FaArrowRightLong } from 'react-icons/fa6';
 import Button from "./components/Button";
 
 /* array with information for all the section on the page */
@@ -67,119 +67,175 @@ const schools = [
     certificate: "Bsc - Computer Science",
     name: "University of Cape Town",
     period:"Jan 2017 - Dec 2022",
-    description: "Focused on Math and Computer Science courses."
+    description: "Focused on Math, Science, software development, algorithms, and data structures."
   },
   {
     certificate: "Fullstack Web Development",
     name: "HyperionDev",
     period:"Nov 2024 - Present",
-    description: "Focused full stack web development topics and technologies."
+    description: "Focused Full stack web development, Frontend, Backend and Database technologies."
   },
 ];
+
+      //<main className="flex flex-col gap-32 mx-auto items-enter">
+        //<header id="header" className="pt-40 mx-auto">
+          //<div className="mx-auto px-4 flex flex-col-reverse md:flex-row items-center justify-between">
+            //<div className="md:w-3/4 mx-auto">
+              //<h1 className="text-4xl md:text-5xl font-bold mb-4">
+                //Hi, I'm <span className="text-blue-500">name surname</span>
+              //</h1>
+              //<p className="text-lg text-gray-600 mb-6 text-wrap">
+                //A passionate Full-Stack Developer committed to building efficient and scalable web applications.
+              //</p>
+              //<a
+                //href="#contact"
+                //className="bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-600 transition duration-300"
+              //>
+                //Get in Touch
+              //</a>
+            //</div>
+            //<div className="md:w-1/2">
+              //<img
+                //src="../images/my_image.jpg"
+                //alt="A professional portrait of name surname"
+                //className="w-64 h-64 mx-auto rounded-full shadow-lg"
+              ///>
+            //</div>
+          //</div>
+        //</header>
+        //{/* {/*hero section* 
+        //<section id="header" className="flex items-center justify-center pt-48 min-h-[60vh]">
+          //<div className="flex flex-wrap items-center justify-between gap-24">
+            //<div className="flex flex-col flex-1 gap-4">
+              //<h1 className="text-4xl font-bold text-desaturated-blue">Hi, I'm <span className="text-primary text-wrap">Siphosethu Shumani</span></h1>
+              //<p className="text-gray-500 text-wrap">A passionate Full-Stack Developer committed to building efficient and scalable web applications.</p>
+              //<div className="flex gap-4">
+                //<Button href="#contact" addedStyles="bg-primary hover:bg-secondary text-white">
+                    //Get in touch  <FaArrowRightLong />
+                //</Button>
+                //<Button href="CV_DYL_1.docx" addedStyles="border border-desaturated-blue hover:bg-blue-50 text-desaturated-blue">
+                    //Download CV  <HiDownload className="size-5" />
+                //</Button>
+              //</div>
+            //</div>
+            //<img src="/my_image.jpg" alt="profile-pic" className="flex-1 w-1 rounded-full shadow-md" />
+          //</div>
+        //</section>
+        //{/* skills section */}
+        //<section id="skills" className="flex flex-col gap-12">
+          //<SectionHeading heading="Skills" />
+          //<div className="flex">
+            //<SkillCard title="Technical Skills" skillArray={technicalSkills} />
+            //<SkillCard title="Soft Skills" skillArray={softSkills} />
+          //</div>
+        //</section>
+        //{/* services section */}
+        //<section id="services" className="flex flex-col gap-12">
+          //<SectionHeading heading="Services" />
+          //<div className="flex justify-center gap-8 flex-wrap">
+            //{
+              //services.map((service) => {
+                //// service card
+                //return (
+                  //<div className="flex flex-col gap-4 text-center items-center bg-white w-64 p-6 rounded-lg shadow-lg hover:-translate-y-2.5 hover:duration-300 ease-in-out duration-300" >
+                    //<service.faIcon className='w-14 h-12 text-primary' />
+                    //<h3 className="text-gray-700 text-2xl font-bold">{ service.title }</h3>
+                    //<p className="text-gray-500">{ service.description }</p>
+                  //</div>
+                //)
+              //})
+            //}
+          //</div>
+        //</section>
+        //{/* projects section */}
+        //<section id="projects" className="flex flex-col gap-12">
+          //<SectionHeading heading="Projects" />
+          //<div className="flex justify-center gap-8">
+            //{
+              //projects.map((project) => {
+                //return <ProjectCard 
+                  //image={project.image} title={project.title} description={project.description} viewProject={project.viewProject} liveDemo={project.liveDemo}
+                ///>
+              //})
+            //}
+          //</div>
+        //</section>
+        //{/* Experience section */}
+        //<section id="experience" className="flex flex-col gap-12">
+          //<SectionHeading heading="Experience" />
+          //<div className="flex flex-col gap-8 pl-10 relative before:content-[''] before:absolute before:bg-primary before:left-2.5 before:w-1 before:h-full">
+            //{
+              //experiences.map((experience) => {
+                //return (
+                  //<div className="flex flex-col gap-2">
+                    //<h2 className="text-2xl font-bold text-desaturated-blue before:content-[''] before:absolute before:bg-white before:w-4 before:h-4 before:left-0 before:rounded-full before:border-4 before:p-2 before:border-primary">{ experience.position }</h2>
+                    //<div className="text-gray-500 flex gap-2 text-sm">
+                      //<span>{ experience.period }</span>
+                      //<span className="border border-gray-400"></span>
+                      //<span>{ experience.company }</span>
+                    //</div>
+                    //<p className="text-gray-500">{ experience.description }</p>
+                  //</div>
+                //);
+              //})
+            //}
+          //</div>
+        //</section>
+        //{/* Education section */}
+        //<section id="education" className="flex flex-col gap-12">
+          //<SectionHeading heading="Education" />
+          //<div className="flex flex-col gap-8 pl-10 relative before:content-[''] before:absolute before:bg-primary before:left-2.5 before:w-1 before:h-full">
+            //{
+              //schools.map((school) => {
+                //return (
+                  //<div className="flex flex-col gap-2">
+                    //<h2 className="text-2xl font-bold text-desaturated-blue before:content-[''] before:absolute before:bg-white before:w-4 before:h-4 before:left-0 before:rounded-full before:border-4 before:p-2 before:border-primary">{ school.certificate }</h2>
+                    //<div className="text-gray-500 flex gap-2 text-sm">
+                      //<span>{ school.period }</span>
+                      //<span className="border border-gray-400"></span>
+                      //<span>{ school.name }</span>
+                    //</div>
+                    //<p className="text-gray-500 mt-2">{ school.description }</p>
+                  //</div>
+                //);
+              //})
+            //}
+          //</div>
+        //</section>
+      //</main>
 
 function App() {
   return (
     <div className="bg-gray-50 flex flex-col items-center gap-36 font-nunito">
       <NavBar />
-      <main className="flex flex-col gap-32  xl:px-64">
-        {/* hero section */}
-        <section id="header" className="flex mx-auto gap-16 items-center pt-48">
-          <div className="flex flex-col gap-6 ">
-            <h1 className="text-4xl font-bold text-primary"><span className="text-desaturated-blue">Hi, I'm</span> Siphosethu Shumani</h1>
-            <p className="w-4/5 text-gray-500">A passionate Full-Stack Developer committed to building efficient and scalable web applications.</p>
+      {/* hero section */}
+      <header id="header" className="flex sm:flex-col sm:gap-4 sm:w-11/12 lg:flex-row pt-48">
+        <div className="mx-auto px-4 flex sm:gap-10 sm:flex-col-reverse lg:flex-row items-center justify-between">
+          <div className="flex flex-col gap-5 sm:w-full lg:w-11/12 2xl:w-3/4">
+            <h1 className="lg:w-4/5 xl:w-full sm:text-4xl md:text-5xl font-bold">
+              Hi, I'm <span className="text-primary">Siphosethu Shumani</span>
+            </h1>
+            <p className="text-lg text-desaturated-blue lg:w-11/12">
+              A passionate Full-Stack Developer committed to building efficient and scalable web applications.
+            </p>
             <div className="flex gap-4">
-              <Button href="#contact" addedStyles="bg-primary hover:bg-secondary text-white" >
+            <Button href="#contact" addedStyles="bg-primary hover:bg-secondary text-white">
                   Get in touch  <FaArrowRightLong />
               </Button>
-              <Button href="CV_DYL_1.docx" addedStyles="border border-desaturated-blue hover:bg-blue-50 text-desaturated-blue" >
+              <Button href="CV_DYL_1.docx" addedStyles="border border-desaturated-blue hover:bg-blue-50 text-desaturated-blue">
                   Download CV  <HiDownload className="size-5" />
               </Button>
             </div>
           </div>
-          <img src="/my_image.jpg" alt="profile-pic" className="size-72 rounded-full shadow-md" />
-        </section>
-        {/* skills section */}
-        <section id="skills" className="flex flex-col gap-12">
-          <SectionHeading heading="Skills" />
-          <div className="flex">
-            <SkillCard title="Technical Skills" skillArray={technicalSkills} />
-            <SkillCard title="Soft Skills" skillArray={softSkills} />
+          <div className="md:w-1/2 text-center">
+            <img
+              src="/my_image.jpg"
+              alt="A professional portrait of Siphosethu Shumani"
+              className="size-72 mx-auto rounded-full shadow-lg"
+            />
           </div>
-        </section>
-        {/* services section */}
-        <section id="services" className="flex flex-col gap-12">
-          <SectionHeading heading="Services" />
-          <div className="flex justify-center gap-8 flex-wrap">
-            {
-              services.map((service) => {
-                // service card
-                return (
-                  <div className="flex flex-col gap-4 text-center items-center bg-white w-64 p-6 rounded-lg shadow-lg hover:-translate-y-2.5 hover:duration-300 ease-in-out duration-300" >
-                    <service.faIcon className='w-14 h-12 text-primary' />
-                    <h3 className="text-gray-700 text-2xl font-bold">{ service.title }</h3>
-                    <p className="text-gray-500">{ service.description }</p>
-                  </div>
-                )
-              })
-            }
-          </div>
-        </section>
-        {/* projects section */}
-        <section id="projects" className="flex flex-col gap-12">
-          <SectionHeading heading="Projects" />
-          <div className="flex justify-center gap-8">
-            {
-              projects.map((project) => {
-                return <ProjectCard 
-                  image={project.image} title={project.title} description={project.description} viewProject={project.viewProject} liveDemo={project.liveDemo}
-                />
-              })
-            }
-          </div>
-        </section>
-        {/* Experience section */}
-        <section id="experience" className="flex flex-col gap-12">
-          <SectionHeading heading="Experience" />
-          <div className="flex flex-col gap-8 pl-10 relative before:content-[''] before:absolute before:bg-primary before:left-2.5 before:w-1 before:h-full">
-            {
-              experiences.map((experience) => {
-                return (
-                  <div className="flex flex-col gap-2">
-                    <h2 className="text-2xl font-bold text-desaturated-blue before:content-[''] before:absolute before:bg-white before:w-4 before:h-4 before:left-0 before:rounded-full before:border-4 before:p-2 before:border-primary">{ experience.position }</h2>
-                    <div className="text-gray-500 flex gap-2 text-sm">
-                      <span>{ experience.period }</span>
-                      <span className="border border-gray-400"></span>
-                      <span>{ experience.company }</span>
-                    </div>
-                    <p className="text-gray-500">{ experience.description }</p>
-                  </div>
-                );
-              })
-            }
-          </div>
-        </section>
-        {/* Education section */}
-        <section id="education" className="flex flex-col gap-12">
-          <SectionHeading heading="Education" />
-          <div className="flex flex-col gap-8 pl-10 relative before:content-[''] before:absolute before:bg-primary before:left-2.5 before:w-1 before:h-full">
-            {
-              schools.map((school) => {
-                return (
-                  <div className="flex flex-col gap-2">
-                    <h2 className="text-2xl font-bold text-desaturated-blue before:content-[''] before:absolute before:bg-white before:w-4 before:h-4 before:left-0 before:rounded-full before:border-4 before:p-2 before:border-primary">{ school.certificate }</h2>
-                    <div className="text-gray-500 flex gap-2 text-sm">
-                      <span>{ school.period }</span>
-                      <span className="border border-gray-400"></span>
-                      <span>{ school.name }</span>
-                    </div>
-                    <p className="text-gray-500 mt-2">{ school.description }</p>
-                  </div>
-                );
-              })
-            }
-          </div>
-        </section>
-      </main>
+        </div>
+      </header>
       <Footer />
     </div>
   );

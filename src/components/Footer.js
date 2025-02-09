@@ -1,6 +1,3 @@
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-//import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-//import { faLinkedin, faGithub, faHackerrank } from '@fortawesome/free-brands-svg-icons';
 import { FaEnvelope, FaPhone } from 'react-icons/fa';
 import { FaLinkedin, FaGithub, FaHackerrank } from 'react-icons/fa';
 
@@ -12,11 +9,9 @@ const Footer = () => {
       <div className="flex flex-col gap-8 items-center">
         <ul className="flex flex-col gap-4 items-center">
           <li className="flex gap-4 items-center">
-            {/* <FontAwesomeIcon icon={faEnvelope} /> */}
             <FaEnvelope />
             <a href="mailto:siphosethu1998@gmail.com" className='hover:underline'>siphosethu1998@gmail.com</a>
           </li>
-          {/* <li className="flex gap-4 items-center"><FontAwesomeIcon icon={faPhone} /> 068 370 4441</li> */}
           <li className="flex gap-4 items-center"><FaPhone /> 068 370 4441</li>
         </ul>
         <div className="flex gap-8 justify-center">
@@ -26,7 +21,6 @@ const Footer = () => {
             rel="noreferrer"
             target="_blank" 
             >
-            {/* <FontAwesomeIcon icon={faLinkedin} className='size-10 transition-colors hover:text-primary' /> Linkedin */}
             <FaLinkedin className='size-10 transition-colors hover:text-primary' /> Linkedin
           </a>
           <a 
@@ -35,7 +29,6 @@ const Footer = () => {
             target="_blank" 
             rel="noreferrer"
             >
-              {/*<FontAwesomeIcon icon={faGithub} className='size-10 transition-colors hover:text-black' /> GitHub */}
               <FaGithub className='size-10 transition-colors hover:text-black' /> GitHub
           </a>
           <a 
@@ -44,7 +37,6 @@ const Footer = () => {
             target="_blank" 
             rel="noreferrer"
             >
-              {/* <FontAwesomeIcon icon={faHackerrank} className='size-10 transition-colors hover:text-green-400' /> HackerRank */}
               <FaHackerrank className='size-10 transition-colors hover:text-green-400' /> HackerRank
           </a>
         </div>

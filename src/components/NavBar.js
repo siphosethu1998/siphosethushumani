@@ -2,8 +2,8 @@ const NavBar = () => {
   const navStyling = "hover:text-primary transition-colors";
 
   return (
-    <div className="bg-white flex gap-96 w-fit rounded-full px-6 py-3 justify-center items-center shadow-md fixed top-4 z-50">
-      <a className="text-2xl font-bold text-primary mr-32" href="#header">Siphosethu Shumani</a>
+    <div className="border border-red-500 bg-white flex flex-1 xl:w-3/4 2xl:4/5 rounded-full px-6 py-2 justify-between items-center shadow-md fixed top-4 z-50">
+      <a className="text-2xl font-bold text-primary xl:text-nowrap" href="#header">Siphosethu Shumani</a>
       <ul className="flex gap-8 font-semibold text-desaturated-blue">
         <li className={`${navStyling}`}><a href="#skills">Skills</a></li>
         <li className={`${navStyling}`}><a href="#services">Services</a></li>

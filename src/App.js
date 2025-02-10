@@ -101,7 +101,7 @@ function App() {
             <Button href="#contact" addedStyles="bg-primary hover:bg-secondary text-white">
                   Get in touch  <FaArrowRightLong />
               </Button>
-              <Button href="CV_DYL_1.docx" addedStyles="border border-desaturated-blue hover:border hover:border-primary hover:text-primary text-desaturated-blue">
+              <Button href="CV_DYL_2.docx" addedStyles="border border-desaturated-blue hover:border hover:border-primary hover:text-primary text-desaturated-blue">
                   Download CV  <HiDownload className="size-5" />
               </Button>
             </div>

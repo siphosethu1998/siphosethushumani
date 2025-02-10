@@ -78,27 +78,6 @@ const schools = [
 ];
 
       //<main className="flex flex-col gap-32 mx-auto items-enter">
-        //{/* Education section */}
-        //<section id="education" className="flex flex-col gap-12">
-          //<SectionHeading heading="Education" />
-          //<div className="flex flex-col gap-8 pl-10 relative before:content-[''] before:absolute before:bg-primary before:left-2.5 before:w-1 before:h-full">
-            //{
-              //schools.map((school) => {
-                //return (
-                  //<div className="flex flex-col gap-2">
-                    //<h2 className="text-2xl font-bold text-desaturated-blue before:content-[''] before:absolute before:bg-white before:w-4 before:h-4 before:left-0 before:rounded-full before:border-4 before:p-2 before:border-primary">{ school.certificate }</h2>
-                    //<div className="text-gray-500 flex gap-2 text-sm">
-                      //<span>{ school.period }</span>
-                      //<span className="border border-gray-400"></span>
-                      //<span>{ school.name }</span>
-                    //</div>
-                    //<p className="text-gray-500 mt-2">{ school.description }</p>
-                  //</div>
-                //);
-              //})
-            //}
-          //</div>
-        //</section>
       //</main>
 
 function App() {
@@ -187,6 +166,27 @@ function App() {
                     <span>{ experience.company }</span>
                   </div>
                   <p className="text-gray-500">{ experience.description }</p>
+                </div>
+              );
+            })
+          }
+        </div>
+      </section>
+      {/* Education section */}
+      <section id="education" className="px-4 sm:w-11/12 2xl:w-4/5 flex flex-col gap-12">
+        <SectionHeading heading="Education" />
+        <div className="flex flex-col gap-8 pl-10 relative before:content-[''] before:absolute before:bg-primary before:left-2.5 before:w-1 before:h-full">
+          {
+            schools.map((school) => {
+              return (
+                <div className="flex flex-col gap-2">
+                  <h2 className="text-2xl font-bold text-desaturated-blue before:content-[''] before:absolute before:bg-white before:w-4 before:h-4 before:left-0 before:rounded-full before:border-4 before:p-2 before:border-primary">{ school.certificate }</h2>
+                  <div className="text-gray-500 flex gap-2 text-sm">
+                    <span>{ school.period }</span>
+                    <span className="border border-gray-400"></span>
+                    <span>{ school.name }</span>
+                  </div>
+                  <p className="text-gray-500 mt-2">{ school.description }</p>
                 </div>
               );
             })

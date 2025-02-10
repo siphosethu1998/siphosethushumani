@@ -49,6 +49,12 @@ const experiences = [
     description: "Maintained stock and inventory, ensuring accurate record-keeping and efficient operations."
   },
   {
+    position:"Software Developer",
+    period:"July 2021 - Aug 2021",
+    company: "ClearlyEnergy",
+    description: "Responsible for converting a static(image) graph to a dynamic and interactive chart to improve user experience."
+  },
+  {
     position:"Tutor",
     period:"Mar 2022 - Present",
     company: "Turtlejar Tutoring",

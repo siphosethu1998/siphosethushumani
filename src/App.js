@@ -77,9 +77,6 @@ const schools = [
   },
 ];
 
-      //<main className="flex flex-col gap-32 mx-auto items-enter">
-      //</main>
-
 function App() {
   return (
     <div className="bg-gray-50 flex flex-col items-center gap-28 font-nunito">
@@ -98,7 +95,7 @@ function App() {
             <Button href="#contact" addedStyles="bg-primary hover:bg-secondary text-white">
                   Get in touch  <FaArrowRightLong />
               </Button>
-              <Button href="CV_DYL_1.docx" addedStyles="border border-desaturated-blue hover:bg-blue-50 text-desaturated-blue">
+              <Button href="CV_DYL_1.docx" addedStyles="border border-desaturated-blue hover:border hover:border-primary hover:text-primary text-desaturated-blue">
                   Download CV  <HiDownload className="size-5" />
               </Button>
             </div>

@@ -4,7 +4,7 @@ import { HiMiniArrowUpRight } from 'react-icons/hi2';
 
 const ProjectCard = ({image, title, description, viewProject, liveDemo }) => {
   return (
-    <div className="bg-white flex flex-col gap-3 rounded-lg shadow-lg w-96">
+    <div className="sm:w-4/5 lg:w-96 bg-white flex flex-col gap-3 rounded-lg shadow-lg">
       <img src={image} alt="project thumbnail" className="rounded-t-lg h-[220px]" />
       <div className="flex flex-col gap-3 px-8 mt-2">
         <h4 className="text-gray-700 text-xl font-bold">{ title }</h4>

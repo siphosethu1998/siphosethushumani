@@ -262,6 +262,19 @@ function App() {
           }
         </div>
       </section>
+      {/* projects section */}
+      <section id="projects" className="px-4 flex flex-col gap-12">
+        <SectionHeading heading="Projects" />
+        <div className="flex flex-wrap justify-center sm:gap-8 xl:gap-5">
+          {
+            projects.map((project) => {
+              return <ProjectCard 
+                image={project.image} title={project.title} description={project.description} viewProject={project.viewProject} liveDemo={project.liveDemo}
+              />
+            })
+          }
+        </div>
+      </section>
       <Footer />
     </div>
   );

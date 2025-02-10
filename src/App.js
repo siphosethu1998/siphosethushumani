@@ -206,11 +206,11 @@ const schools = [
 
 function App() {
   return (
-    <div className="bg-gray-50 flex flex-col items-center gap-36 font-nunito">
+    <div className="bg-gray-50 flex flex-col items-center gap-28 font-nunito">
       <NavBar />
       {/* hero section */}
-      <header id="header" className="flex sm:flex-col sm:gap-4 sm:w-11/12 lg:flex-row pt-48">
-        <div className="mx-auto px-4 flex sm:gap-10 sm:flex-col-reverse lg:flex-row items-center justify-between">
+      <header id="header" className="px-4 flex sm:flex-col sm:gap-4 sm:w-11/12 lg:flex-row pt-48">
+        <div className="mx-auto flex sm:gap-10 sm:flex-col-reverse lg:flex-row items-center justify-between">
           <div className="flex flex-col gap-5 sm:w-full lg:w-11/12 2xl:w-3/4">
             <h1 className="lg:w-4/5 xl:w-full sm:text-4xl md:text-5xl font-bold">
               Hi, I'm <span className="text-primary">Siphosethu Shumani</span>
@@ -236,6 +236,14 @@ function App() {
           </div>
         </div>
       </header>
+      {/* skills section */}
+      <section id="skills" className="px-4 flex flex-col gap-12 sm:w-11/12 2xl:w-4/5">
+        <SectionHeading heading="Skills" />
+        <div className="flex sm:flex-col sm:gap-8 lg:flex-row lg:gap-2">
+          <SkillCard title="Technical Skills" skillArray={technicalSkills} />
+          <SkillCard title="Soft Skills" skillArray={softSkills} />
+        </div>
+      </section>
       <Footer />
     </div>
   );

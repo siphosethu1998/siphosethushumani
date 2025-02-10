@@ -79,7 +79,7 @@ const schools = [
 
 function App() {
   return (
-    <div className="bg-gray-50 flex flex-col items-center gap-28 font-nunito">
+    <div className="bg-gray-50 flex flex-col items-center gap-32 font-nunito">
       <NavBar />
       {/* hero section */}
       <header id="header" className="px-4 flex sm:flex-col sm:gap-4 sm:w-11/12 lg:flex-row pt-48">

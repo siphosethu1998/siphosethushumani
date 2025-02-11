@@ -88,17 +88,17 @@ function App() {
     <div className="bg-gray-50 flex flex-col items-center gap-32 font-nunito">
       <NavBar />
       {/* hero section */}
-      <header id="header" className="px-4 flex sm:flex-col sm:gap-4 sm:w-11/12 lg:flex-row pt-48">
-        <div className="mx-auto flex sm:gap-10 sm:flex-col-reverse lg:flex-row items-center justify-between">
-          <div className="flex flex-col gap-5 sm:w-full lg:w-11/12 2xl:w-3/4">
-            <h1 className="lg:w-4/5 xl:w-full sm:text-4xl md:text-5xl font-bold">
+      <header id="header" className="px-4 flex xs:flex-col xs:gap-4 xs:w-11/12 lg:flex-row pt-48">
+        <div className="mx-auto flex xs:gap-10 xs:flex-col-reverse lg:flex-row items-center justify-between">
+          <div className="flex flex-col gap-5 xs:w-full lg:w-11/12 2xl:w-3/4">
+            <h1 className="lg:w-4/5 xl:w-full xs:text-3xl sm:text-4xl md:text-5xl font-bold">
               Hi, I'm <span className="text-primary">Siphosethu Shumani</span>
             </h1>
             <p className="text-lg text-desaturated-blue lg:w-11/12">
               A passionate Full-Stack Developer committed to building efficient and scalable web applications.
             </p>
             <div className="flex gap-4">
-            <Button href="#contact" addedStyles="bg-primary hover:bg-secondary text-white">
+              <Button href="#contact" addedStyles="bg-primary hover:bg-secondary text-white">
                   Get in touch  <FaArrowRightLong />
               </Button>
               <Button href="CV_DYL_2.docx" addedStyles="border border-desaturated-blue hover:border hover:border-primary hover:text-primary text-desaturated-blue">
@@ -116,9 +116,9 @@ function App() {
         </div>
       </header>
       {/* skills section */}
-      <section id="skills" className="px-4 flex flex-col gap-12 sm:w-11/12 2xl:w-4/5">
+      <section id="skills" className="px-4 flex flex-col gap-12 xs:w-11/12 2xl:w-4/5">
         <SectionHeading heading="Skills" />
-        <div className="flex sm:flex-col sm:gap-8 lg:flex-row lg:gap-2">
+        <div className="flex xs:flex-col xs:gap-8 lg:flex-row lg:gap-2">
           <SkillCard title="Technical Skills" skillArray={technicalSkills} />
           <SkillCard title="Soft Skills" skillArray={softSkills} />
         </div>
@@ -126,12 +126,12 @@ function App() {
       {/* services section */}
       <section id="services" className="px-4 flex flex-col gap-12">
         <SectionHeading heading="Services" />
-        <div className="flex sm:flex-col lg:flex-row justify-center gap-8 flex-wrap">
+        <div className="flex xs:flex-col lg:flex-row justify-center gap-8 flex-wrap">
           {
             services.map((service) => {
               // service card
               return (
-                <div className="sm:mx-auto sm:w-11/12 lg:mx-0 lg:w-64 flex flex-col gap-4 text-center items-center bg-white p-6 rounded-lg shadow-lg hover:-translate-y-2.5 hover:duration-300 ease-in-out duration-300" >
+                <div className="xs:mx-auto xs:w-11/12 lg:mx-0 lg:w-64 flex flex-col gap-4 text-center items-center bg-white p-6 rounded-lg shadow-lg hover:-translate-y-2.5 hover:duration-300 ease-in-out duration-300" >
                   <service.faIcon className='w-14 h-12 text-primary' />
                   <h3 className="text-gray-700 text-2xl font-bold">{ service.title }</h3>
                   <p className="text-gray-500">{ service.description }</p>
@@ -144,7 +144,7 @@ function App() {
       {/* projects section */}
       <section id="projects" className="px-4 flex flex-col gap-12">
         <SectionHeading heading="Projects" />
-        <div className="flex flex-wrap justify-center sm:gap-8 xl:gap-5">
+        <div className="xs:w-11/12 xs:mx-auto xs:gap-8 xl:gap-5 lg:w-full lg:mx-0 flex flex-wrap justify-center ">
           {
             projects.map((project) => {
               return <ProjectCard 
@@ -155,7 +155,7 @@ function App() {
         </div>
       </section>
       {/* Experience section */}
-      <section id="experience" className="px-4 sm:w-11/12 2xl:w-4/5 flex flex-col gap-12">
+      <section id="experience" className="px-4 xs:w-11/12 2xl:w-4/5 flex flex-col gap-12">
         <SectionHeading heading="Experience" />
         <div className="self-start flex flex-col gap-8 pl-10 relative before:content-[''] before:absolute before:bg-primary before:left-2.5 before:w-1 before:h-full">
           {
@@ -176,7 +176,7 @@ function App() {
         </div>
       </section>
       {/* Education section */}
-      <section id="education" className="px-4 sm:w-11/12 2xl:w-4/5 flex flex-col gap-12">
+      <section id="education" className="px-4 xs:w-11/12 2xl:w-4/5 flex flex-col gap-12">
         <SectionHeading heading="Education" />
         <div className="flex flex-col gap-8 pl-10 relative before:content-[''] before:absolute before:bg-primary before:left-2.5 before:w-1 before:h-full">
           {

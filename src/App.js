@@ -1,15 +1,71 @@
 import NavBar from "./components/NavBar";
 import ProjectCard from "./components/ProjectCard";
-import SkillCard from "./components/SkillCard";
 import Footer from "./components/Footer";
+import Button from "./components/Button";
 import SectionHeading from "./components/SectionHeading";
-import { FaServer, FaCloud, FaDatabase, FaLaptopCode } from 'react-icons/fa';
 import { HiDownload } from 'react-icons/hi';
 import { FaArrowRightLong } from 'react-icons/fa6';
-import Button from "./components/Button";
+import { FaServer, FaCloud, FaDatabase, FaLaptopCode } from 'react-icons/fa';
 
 /* array with information for all the section on the page */
-const technicalSkills = ["HTML5", "CSS3", "Javascript", "Python", "Java", "SQL", "GitHub", "Linux", "MongoDB"];
+const technicalSkills = [
+  {
+    name : "HTML5", 
+    icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+  },
+  {
+    name : "CSS3", 
+    icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+  },
+  {
+    name : "Javascript", 
+    icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+  },
+  {
+    name : "React", 
+    icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+  },
+  {
+    name : "Redux", 
+    icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
+  },
+  {
+    name : "Tailwindcss", 
+    icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg"
+  },
+  {
+    name : "ExpressJS", 
+    icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg"
+  },
+  {
+    name : "Python", 
+    icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+  },
+  {
+    name : "Django", 
+    icon : "https://cdn.worldvectorlogo.com/logos/django.svg"
+  },
+  {
+    name : "PostgreSQL", 
+    icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg"
+  },
+  {
+    name : "Java", 
+    icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+  },
+  {
+    name : "GitHub", 
+    icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg"
+  },
+  {
+    name : "Linux", 
+    icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
+  },
+  {
+    name : "MongoDB", 
+    icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
+  },
+];
 const softSkills = ["Team Collaboration", "Critical Thinking", "Problem Solving", "Adaptability"];
 const services = [
   {title:"Web Development", description:"Creating responsive and dynamic websites tailored to your business needs.", faIcon:FaLaptopCode},
@@ -119,8 +175,33 @@ function App() {
       <section id="skills" className="px-4 flex flex-col gap-12 xs:w-11/12 2xl:w-4/5">
         <SectionHeading heading="Skills" />
         <div className="flex xs:flex-col xs:gap-8 lg:flex-row lg:gap-2">
-          <SkillCard title="Technical Skills" skillArray={technicalSkills} />
-          <SkillCard title="Soft Skills" skillArray={softSkills} />
+          <div className="flex flex-col gap-6 max-w-3xl">
+            <h3 className="text-xl font-bold text-gray-700">Technical Skills</h3>
+            <div className="flex gap-6 flex-1 flex-wrap">
+              {
+                technicalSkills.map(skill => {
+                  return (
+                    <div className="bg-silver-gray flex flex-col gap-4 items-center w-fit px-6 py-4 rounded-lg shadow-xl hover:scale-110 hover:duration-300 ease-in-out duration-700">
+                      <img src={skill.icon} className="size-16" alt="technical skill icon" />
+                      <span className="font-bold text-gray-500">{ skill.name }</span>
+                    </div>
+                  );
+                })
+              }
+            </div>
+          </div>
+          <div className="flex flex-col gap-6 max-w-3xl">
+            <h3 className="text-xl font-bold text-gray-700">Soft Skills</h3>
+            <div className="flex gap-4 flex-wrap">
+              {
+                softSkills.map(skill => {
+                  return (
+                    <span className="font-semibold text-gray-600 bg-silver-gray w-fit h-fit px-4 py-4 rounded-lg shadow-xl">{ skill }</span>
+                  );
+                })
+              }
+            </div>
+          </div>
         </div>
       </section>
       {/* services section */}

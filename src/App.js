@@ -30,11 +30,11 @@ const technicalSkills = [
     icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
   },
   {
-    name : "Tailwindcss", 
+    name : "Tailwind", 
     icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg"
   },
   {
-    name : "ExpressJS", 
+    name : "Express", 
     icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg"
   },
   {
@@ -46,7 +46,7 @@ const technicalSkills = [
     icon : "https://cdn.worldvectorlogo.com/logos/django.svg"
   },
   {
-    name : "PostgreSQL", 
+    name : "Postgres", 
     icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg"
   },
   {
@@ -64,6 +64,14 @@ const technicalSkills = [
   {
     name : "MongoDB", 
     icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
+  },
+  {
+    name : "Mongoose", 
+    icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongoose/mongoose-original.svg"
+  },
+  {
+    name : "Postman", 
+    icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg"
   },
 ];
 const softSkills = ["Team Collaboration", "Critical Thinking", "Problem Solving", "Adaptability"];
@@ -129,12 +137,12 @@ const schools = [
     certificate: "Bsc - Computer Science",
     name: "University of Cape Town",
     period:"Jan 2017 - Dec 2022",
-    description: "Focused on Math, Science, software development, algorithms, and data structures."
+    description: "Focused on Math, Science, Software development, Data structures, and Algorithms."
   },
   {
     certificate: "Fullstack Web Development",
     name: "HyperionDev",
-    period:"Nov 2024 - Present",
+    period:"Nov 2024 - Mar 2025",
     description: "Focused Full stack web development, Frontend, Backend and Database technologies."
   },
 ];

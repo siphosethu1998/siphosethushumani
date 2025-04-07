@@ -92,7 +92,7 @@ const projects = [
   {
     image: "the_odin_project_clone.jpg", 
     title:"The Odin Project clone", 
-    description:"This is a clone of theodinproject landing page.",
+    description:"This is a clone of the entire theodinproject webiste.",
     viewProject: "https://github.com/siphosethu1998/the_odin_project_clone",
     liveDemo: "https://the-odin-project-clone.onrender.com"
   }, 

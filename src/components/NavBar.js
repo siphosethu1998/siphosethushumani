@@ -14,7 +14,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="bg-white flex flex-1 xxs:w-11/12 2xl:w-11/12 mx-auto rounded-full px-6 py-2 justify-between items-center shadow-md fixed top-4 z-50">
+    <div className="bg-white flex flex-1 xxs:w-11/12 2xl:w-5/6 mx-auto rounded-full px-6 py-2 justify-between items-center shadow-md fixed top-4 z-50">
       <a
         className="text-2xl font-bold text-primary xxs:text-wrap xxs:w-5/6 xs:text-nowrap"
         href="#header"

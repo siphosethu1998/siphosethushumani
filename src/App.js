@@ -18,7 +18,7 @@ const technicalSkills = [
     icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
   },
   {
-    name : "Javascript", 
+    name : "JavaScript", 
     icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
   },
   {
@@ -66,21 +66,28 @@ const technicalSkills = [
     icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
   },
   {
+    name : "Postman", 
+    icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg"
+  },
+  {
     name : "Mongoose", 
     icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongoose/mongoose-original.svg"
   },
   {
-    name : "Postman", 
-    icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg"
+    name : "TypeScript", 
+    icon : "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
   },
 ];
+
 const softSkills = ["Team Collaboration", "Critical Thinking", "Problem Solving", "Adaptability"];
+
 const services = [
   {title:"Web Development", description:"Creating responsive and dynamic websites tailored to your business needs.", faIcon:FaLaptopCode},
   {title:"Backend Development", description:"Building robust server-side applications and APIs for seamless integration.", faIcon:FaServer}, 
   {title:"Database Design", description:"Designing efficient database schemas for optimal data management.", faIcon:FaDatabase}, 
   {title:"Cloud Integration", description:"Integrating cloud services to enhance scalability and performance.", faIcon:FaCloud}, 
 ];
+
 const projects = [
   {
     image: "personal_website.jpg", 
@@ -107,10 +114,10 @@ const projects = [
 
 const experiences = [
   {
-    position:"Cycle Counter",
-    period:"Dec 2018 - Feb 2019",
-    company: "ShopriteDC",
-    description: "Maintained stock and inventory, ensuring accurate record-keeping and efficient operations."
+    position:"Tutor",
+    period:"Mar 2022 - Present",
+    company: "Turtlejar Tutoring",
+    description: "Tutoring Math, Science and Computer Science in-person and online, helping students achieve academic success."
   },
   {
     position:"Software Developer",
@@ -119,19 +126,19 @@ const experiences = [
     description: "Responsible for converting a static(image) graph to a dynamic and interactive chart to improve user experience."
   },
   {
-    position:"Tutor",
-    period:"Mar 2022 - Present",
-    company: "Turtlejar Tutoring",
-    description: "Tutoring Math, Science and Computer Science in-person and online, helping students achieve academic success."
-  }
+    position:"Cycle Counter",
+    period:"Dec 2018 - Feb 2019",
+    company: "ShopriteDC",
+    description: "Maintained stock and inventory, ensuring accurate record-keeping and efficient operations."
+  },
 ];
 
 const schools = [
   {
-    certificate: "Bachelor's",
-    name: "Wallacedene Secondary",
-    period:"Jan 2012 - Dec 2016",
-    description: "Focused on Math and Science related subjects."
+    certificate: "Fullstack Web Development",
+    name: "HyperionDev",
+    period:"Nov 2024 - Mar 2025",
+    description: "Focused Full stack web development, Frontend, Backend and Database technologies."
   },
   {
     certificate: "Bsc - Computer Science",
@@ -140,10 +147,10 @@ const schools = [
     description: "Focused on Math, Science, Software development, Data structures, and Algorithms."
   },
   {
-    certificate: "Fullstack Web Development",
-    name: "HyperionDev",
-    period:"Nov 2024 - Mar 2025",
-    description: "Focused Full stack web development, Frontend, Backend and Database technologies."
+    certificate: "Bachelor's",
+    name: "Wallacedene Secondary",
+    period:"Jan 2012 - Dec 2016",
+    description: "Focused on Math and Science related subjects."
   },
 ];
 
@@ -152,20 +159,20 @@ function App() {
     <div className="bg-gray-50 flex flex-col items-center gap-32 font-nunito">
       <NavBar />
       {/* hero section */}
-      <header id="header" className="px-4 flex xs:flex-col xs:gap-4 xs:w-11/12 lg:flex-row pt-48">
-        <div className="mx-auto flex xs:gap-10 xs:flex-col-reverse lg:flex-row items-center justify-between">
-          <div className="flex flex-col gap-5 xs:w-full lg:w-11/12 2xl:w-3/4">
-            <h1 className="lg:w-4/5 xl:w-full xs:text-3xl sm:text-4xl md:text-5xl font-bold">
+      <header id="header" className="px-4 flex xxs:flex-col xxs:gap-4 xxs:w-11/12 lg:flex-row pt-48">
+        <div className="mx-auto flex xxs:gap-10 xxs:flex-col-reverse lg:flex-row items-center justify-between">
+          <div className="flex flex-col gap-5 xxs:w-full lg:w-11/12 2xl:w-3/4">
+            <h1 className="lg:w-4/5 xl:w-full xxs:text-3xl sm:text-4xl md:text-5xl font-bold">
               Hi, I'm <span className="text-primary">Siphosethu Shumani</span>
             </h1>
             <p className="text-lg text-desaturated-blue lg:w-11/12">
               A passionate Full-Stack Developer committed to building efficient and scalable web applications.
             </p>
-            <div className="flex gap-4">
-              <Button href="#contact" addedStyles="bg-primary hover:bg-secondary text-white">
+            <div className="flex flex-1 gap-4 xxs:items-center xxs:flex-col xs:flex-row">
+              <Button href="#contact" addedStyles="bg-primary hover:bg-secondary text-white xxs:w-full flex justify-center">
                   Get in touch  <FaArrowRightLong />
               </Button>
-              <Button href="CV_DYL_2.docx" addedStyles="border border-desaturated-blue hover:border hover:border-primary hover:text-primary text-desaturated-blue">
+              <Button href="ATS_CV_PnP.pdf" addedStyles="border border-desaturated-blue hover:border hover:border-primary hover:text-primary text-desaturated-blue xxs:w-full flex justify-center">
                   Download CV  <HiDownload className="size-5" />
               </Button>
             </div>
@@ -180,16 +187,16 @@ function App() {
         </div>
       </header>
       {/* skills section */}
-      <section id="skills" className="px-4 flex flex-col gap-12 xs:w-11/12 2xl:w-4/5">
+      <section id="skills" className="px-4 flex flex-col gap-12 xxs:w-11/12 2xl:w-4/5">
         <SectionHeading heading="Skills" />
-        <div className="flex xs:flex-col xs:gap-8 lg:flex-row lg:gap-2">
-          <div className="flex flex-col gap-6 max-w-3xl">
+        <div className="flex xxs:flex-col xxs:gap-8 lg:gap-0 lg:flex-row">
+          <div className="flex flex-col gap-6 lg:w-11/12">
             <h3 className="text-xl font-bold text-gray-700">Technical Skills</h3>
-            <div className="flex gap-6 flex-1 flex-wrap">
+            <div className="flex gap-6 flex-wrap lg:w-full">
               {
                 technicalSkills.map(skill => {
                   return (
-                    <div className="bg-silver-gray flex flex-col gap-4 items-center w-fit px-6 py-4 rounded-lg shadow-xl hover:scale-110 hover:duration-300 ease-in-out duration-700">
+                    <div className="bg-silver-gray flex flex-col xxs:flex-1 md:flex-none gap-4 items-center w-fit px-6 py-4 rounded-lg shadow-xl hover:scale-110 hover:duration-300 ease-in-out duration-700">
                       <img src={skill.icon} className="size-16" alt="technical skill icon" />
                       <span className="font-bold text-gray-500">{ skill.name }</span>
                     </div>
@@ -198,13 +205,13 @@ function App() {
               }
             </div>
           </div>
-          <div className="flex flex-col gap-6 max-w-3xl">
+          <div className="flex xxs:flex-col gap-6 max-w-3xl">
             <h3 className="text-xl font-bold text-gray-700">Soft Skills</h3>
-            <div className="flex gap-4 flex-wrap">
+            <div className="flex gap-4 flex-wrap mr-auto">
               {
                 softSkills.map(skill => {
                   return (
-                    <span className="font-semibold text-gray-600 bg-silver-gray w-fit h-fit px-4 py-4 rounded-lg shadow-xl">{ skill }</span>
+                    <span className="font-semibold text-gray-600 bg-silver-gray xxs:flex-1 xs:flex-none w-fit h-fit px-4 py-4 rounded-lg shadow-xl text-center sm:text-nowrap">{ skill }</span>
                   );
                 })
               }
@@ -215,12 +222,12 @@ function App() {
       {/* services section */}
       <section id="services" className="px-4 flex flex-col gap-12">
         <SectionHeading heading="Services" />
-        <div className="flex xs:flex-col lg:flex-row justify-center gap-8 flex-wrap">
+        <div className="flex xxs:flex-col lg:flex-row justify-center gap-8 flex-wrap">
           {
             services.map((service) => {
               // service card
               return (
-                <div className="xs:mx-auto xs:w-11/12 lg:mx-0 lg:w-64 flex flex-col gap-4 text-center items-center bg-white p-6 rounded-lg shadow-lg hover:-translate-y-2.5 hover:duration-300 ease-in-out duration-300" >
+                <div className="xxs:mx-auto xxs:w-11/12 lg:mx-0 lg:w-64 flex flex-col gap-4 text-center items-center bg-white p-6 rounded-lg shadow-lg hover:-translate-y-2.5 hover:duration-300 ease-in-out duration-300" >
                   <service.faIcon className='w-14 h-12 text-primary' />
                   <h3 className="text-gray-700 text-2xl font-bold">{ service.title }</h3>
                   <p className="text-gray-500">{ service.description }</p>
@@ -233,7 +240,7 @@ function App() {
       {/* projects section */}
       <section id="projects" className="px-4 flex flex-col gap-12">
         <SectionHeading heading="Projects" />
-        <div className="xs:w-11/12 xs:mx-auto xs:gap-8 xl:gap-5 lg:w-full lg:mx-0 flex flex-wrap justify-center ">
+        <div className="xxs:w-11/12 xxs:mx-auto xxs:gap-8 lg:w-full lg:mx-0 xl:gap-8 flex flex-wrap justify-around">
           {
             projects.map((project) => {
               return <ProjectCard 
